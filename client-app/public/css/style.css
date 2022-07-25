@@ -650,39 +650,38 @@ p {
     color: #fff;
     font-size: 25px;
 }
-/* Light and Dark mode navbar */
 
 :root{
     --primary-color:#fff;
     --secondary-color: #000; 
-}
-
-.dark__mode{
+  }
+  
+  .dark__mode{
     --primary-color:#000;
     --secondary-color: #fff;
-}
-.moon, .sun{
+  }
+  .moon, .sun{
     margin-top: 13.5px;
     float: left;
-}
- button{
+  }
+  button{
     border: none;
     outline: none;
     background-color: transparent;
     font-size: 18px;
     cursor: pointer;
     margin-left: 25px;
- }
- .show{
+  }
+  .show{
     display:inline;
- }
- .hide{
+  }
+  .hide{
     display: none;
- }
- .sun{
+  }
+  .sun{
     color: #fff;
- }
-
+  }
+  
 
 
 
