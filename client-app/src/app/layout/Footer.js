@@ -9,7 +9,7 @@ export const Footer = () => {
             <div class="col-md-6">
               <div id="copyright">
                 <p>
-                  Copyright &copy; 2016 <a href="/"> - LoSo</a>
+                  Copyright &copy; 2022 <a href="/"> - LoSo</a>
                 </p>
               </div>
             </div>
@@ -35,6 +35,8 @@ export const Footer = () => {
       <script src="js/wow.min.js"></script>
 
       <script src="js/custom.js"></script>
+
+      <script src="./js/main.js"></script>
     </div>
   );
 };
