@@ -3,10 +3,10 @@ import React from 'react';
 export const About = () => {
   return (
     <section id="ABOUT">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="section-title">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-10 col-md-offset-1">
+            <div className="section-title">
               <h2> About Us </h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -19,17 +19,17 @@ export const About = () => {
         </div>
       </div>
 
-      <div class="choose-us-wraper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
+      <div className="choose-us-wraper">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
               <div
-                class="about-iphone wow fadeInLeft"
+                className="about-iphone wow fadeInLeft"
                 data-wow-duration="1s"
                 data-wow-delay=".5s"
               >
                 <img
-                  class="img-responsive"
+                  className="img-responsive"
                   src="images/about-iphone.png"
                   alt="iphone"
                 />
@@ -37,11 +37,11 @@ export const About = () => {
             </div>
 
             <div
-              class="col-md-6 wow fadeInRight"
+              className="col-md-6 wow fadeInRight"
               data-wow-duration="1s"
               data-wow-delay=".5s"
             >
-              <div class="choose-us-title">
+              <div className="choose-us-title">
                 <h2> Why Choose Us?</h2>
                 <p>
                   Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -50,14 +50,14 @@ export const About = () => {
                 </p>
               </div>
 
-              <div class="choose-us-des">
+              <div className="choose-us-des">
                 <div
-                  class="choose-us-item wow fadeInUp"
+                  className="choose-us-item wow fadeInUp"
                   data-wow-duration=".5s"
                   data-wow-delay="1s"
                 >
                   <div>
-                    <i class="fa fa-bolt"></i>
+                    <i className="fa fa-bolt"></i>
                   </div>
 
                   <h3>QUISQUE LACUS DUI</h3>
@@ -70,12 +70,12 @@ export const About = () => {
                 </div>
 
                 <div
-                  class="choose-us-item wow fadeInUp"
+                  className="choose-us-item wow fadeInUp"
                   data-wow-duration=".5s"
                   data-wow-delay="1s"
                 >
                   <div>
-                    <i class="fa fa-bullhorn"></i>
+                    <i className="fa fa-bullhorn"></i>
                   </div>
 
                   <h3>DONEC EU PLACERAT NISI</h3>
@@ -88,12 +88,12 @@ export const About = () => {
                 </div>
 
                 <div
-                  class="choose-us-item wow fadeInUp"
+                  className="choose-us-item wow fadeInUp"
                   data-wow-duration=".5s"
                   data-wow-delay="1s"
                 >
                   <div>
-                    <i class="fa fa-flag-o"></i>
+                    <i className="fa fa-flag-o"></i>
                   </div>
 
                   <h3>PERSPICIATIS UNDE OMNIS</h3>

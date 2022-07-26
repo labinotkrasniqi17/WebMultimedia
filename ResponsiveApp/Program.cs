@@ -1,4 +1,3 @@
-using JobifyApp.Data;
 using JobifyApp.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -25,22 +24,6 @@ namespace JobifyApp
             var services = scope.ServiceProvider;
 
             var logger = services.GetRequiredService<ILogger<Program>>();
-
-
-
-
-            try
-            {
-                var context = services.GetRequiredService<AppDbContext>();
-
-
-                await context.Database.MigrateAsync();
-                await DbInitializer.Initialize(context);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "An error occured during migration");
-            }
 
 
             await host.RunAsync();

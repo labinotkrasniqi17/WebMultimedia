@@ -1,5 +1,4 @@
 
-using JobifyApp.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,8 +34,8 @@ namespace JobifyApp
             services.AddControllers().AddNewtonsoftJson(x =>
                 x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             //DbContext configuration
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString
-                ("DefaultConnectionString")));
+            // services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString
+            //     ("DefaultConnectionString")));
             //Scoped Elements
             //services.AddScoped<IUserRepository, UserRepository>();
 
