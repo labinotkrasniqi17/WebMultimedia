@@ -1,11 +1,12 @@
-import React from 'react'
-import { Footer, Header } from './layout'
+import React from 'react';
+import { Footer, Header, Body } from './layout';
 
 export const Dashboard = () => {
   return (
     <div>
-        <Header />
-        <Footer />
+      <Header />
+      <Footer />
+      <Body />
     </div>
-  )
-}
+  );
+};
