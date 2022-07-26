@@ -5,8 +5,8 @@ export const Dashboard = () => {
   return (
     <div>
       <Header />
+        <Body />
       <Footer />
-      <Body />
     </div>
   );
 };
