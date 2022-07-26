@@ -49,6 +49,11 @@ export const Header = () => {
               className="collapse navbar-collapse"
               id="loso-navbar-collapse-1"
             >
+              <video autoPlay loop muted plays-playsInline className="back-video" style={{position:"fixed", right:0, bottom:0, left:0, zIndex:-1, height:"100vh", width:"100vw", objectFit:"cover", overflowX:"hidden"}}>
+               <source src="./videos/video.mp4" type="video/mp4"/>
+                  Your browser does not support the video tag.
+              </video>
+
               <ul className="nav navbar-nav navbar-right">
                 <li>
                   <a href="#HOME" className="nav-item">
@@ -135,6 +140,8 @@ export const Header = () => {
                     <i className="fa fa-angle-down"></i>
                   </a>
                 </div>
+              </div>
+              <div>
               </div>
 
               <div className="col-md-3 col-md-offset-1">
