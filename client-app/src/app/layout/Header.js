@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 export const Header = () => {
-  
-
   const [darkMode, setDarkMode] = useState();
 
-  useEffect(()=>{   
+  useEffect(() => {
     const lightMode = document.getElementById("light-mode");
     const darkMode = document.getElementById("dark-mode");
     document.body.classList.toggle("dark__mode");
@@ -20,15 +18,64 @@ export const Header = () => {
       lightMode.classList.remove("hide");
       darkMode.classList.toggle("hide");
     });
-  },[darkMode])
+  }, [darkMode]);
 
+  // function ClickON() {
+  //   var x = document.getElementById("myAudio");
+  //   x.play();
+  // }
+  // function ClickOFF() {
+  //   x.stop();
+  // }
+  var vid, mutebtn;
+  function vidmute() {
+    vid = document.getElementById("my_video");
+    mutebtn = document.getElementById("mutebtn");
+    if (vid.muted) {
+      vid.muted = false;
+      mutebtn.innerHTML = `
+      <i style= "color:gray;font-size:40px" class="fas fa-volume-up" ></i>
+      `;
+    } else {
+      vid.muted = true;
+      mutebtn.innerHTML = `         
+      <i style="color:gray;font-size:40px" class="fa-solid fa-volume-xmark"></i>
+      `;
+    }
+  }
   return (
     <div>
       <header className="header" id="HOME">
-              <video autoPlay loop muted plays-playsInline className="back-video" style={{ postion:"relative",right:0, bottom:0, left:0, zIndex:-1, height:"100vh", width:"100vw", objectFit:"cover", overflowX:"hidden", marginTop:50}}>
-                 <source src="./videos/videoplayback.mp4" type="video/mp4"/>
-                  Your browser does not support the video tag.
-              </video>
+      <button style={{ position:"absolute", margin:70, zIndex:"1" }} onClick={vidmute} id="mutebtn">
+          <i style={{ color: "gray",fontSize:"40px" }} class="fa-solid fa-volume-xmark"></i>
+        </button>
+        <video
+          id="my_video"
+          muted
+          autoPlay
+          loop
+          plays-playsInline
+          className="back-video"
+          style={{
+            postion: "relative",
+            right: 0,
+            bottom: 0,
+            left: 0,
+            zIndex: -1,
+            height: "100vh",
+            width: "100vw",
+            objectFit: "cover",
+            overflowX: "hidden",
+            marginTop: 50,
+          }}
+        >
+          <source src="./videos/videoplayback.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+       
+
+        {/* <button onClick={ClickON}>ONN</button> */}
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
@@ -53,8 +100,6 @@ export const Header = () => {
               className="collapse navbar-collapse"
               id="loso-navbar-collapse-1"
             >
-              
-
               <ul className="nav navbar-nav navbar-right">
                 <li>
                   <a href="#HOME" className="nav-item">
@@ -87,7 +132,9 @@ export const Header = () => {
                   </a>
                 </li>
                 <button
-                  onClick={() => setDarkMode(document.getElementById("dark-mode"))}
+                  onClick={() =>
+                    setDarkMode(document.getElementById("dark-mode"))
+                  }
                   id="dark-mode"
                   className="moon"
                 >
@@ -102,10 +149,7 @@ export const Header = () => {
                     <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
                   </svg>
                 </button>
-                <button
-                  id="light-mode"
-                  className="sun hide"
-                >
+                <button id="light-mode" className="sun hide">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -125,7 +169,6 @@ export const Header = () => {
         <div className="header-overlay">
           <div className="container header-container">
             <div className="row" style={{ marginTop: "100px" }}>
-             
               <div className="col-md-8">
                 <div className="header-text">
                   <h1> A clean and modern looking reponsive website</h1>
@@ -143,8 +186,7 @@ export const Header = () => {
                   </a>
                 </div>
               </div>
-              <div>
-              </div>
+              <div></div>
 
               <div className="col-md-3 col-md-offset-1">
                 <div className="header-iphone">
