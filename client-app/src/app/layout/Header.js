@@ -25,6 +25,10 @@ export const Header = () => {
   return (
     <div>
       <header className="header" id="HOME">
+              <video autoPlay loop muted plays-playsInline className="back-video" style={{ postion:"relative",right:0, bottom:0, left:0, zIndex:-1, height:"100vh", width:"100vw", objectFit:"cover", overflowX:"hidden", marginTop:50}}>
+                 <source src="./videos/videoplayback.mp4" type="video/mp4"/>
+                  Your browser does not support the video tag.
+              </video>
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
@@ -49,10 +53,7 @@ export const Header = () => {
               className="collapse navbar-collapse"
               id="loso-navbar-collapse-1"
             >
-              <video autoPlay loop muted plays-playsInline className="back-video" style={{position:"fixed", right:0, bottom:0, left:0, zIndex:-1, height:"100vh", width:"100vw", objectFit:"cover", overflowX:"hidden"}}>
-               <source src="./videos/video.mp4" type="video/mp4"/>
-                  Your browser does not support the video tag.
-              </video>
+              
 
               <ul className="nav navbar-nav navbar-right">
                 <li>
@@ -124,6 +125,7 @@ export const Header = () => {
         <div className="header-overlay">
           <div className="container header-container">
             <div className="row" style={{ marginTop: "100px" }}>
+             
               <div className="col-md-8">
                 <div className="header-text">
                   <h1> A clean and modern looking reponsive website</h1>

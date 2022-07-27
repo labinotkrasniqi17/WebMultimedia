@@ -94,7 +94,7 @@ p {
 
 /* =========== Header ============ */
 .header {
-    /* background-image: url("../images/header-bg.jpg"); */
+    background-image: url("../images/header-bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -106,7 +106,7 @@ p {
 }
 .header-overlay {
     background-color: rgba(31, 31, 31, 0.75);
-
+    margin-top: -4px;
 }
 .logo {
     padding-bottom: 50px;
@@ -653,7 +653,7 @@ p {
 
 :root{
     --primary-color:#fff;
-    --secondary-color: #000; 
+    --secondary-color: rgb(184, 170, 170);
   }
   
   .dark__mode{
@@ -680,6 +680,9 @@ p {
   }
   .sun{
     color: #fff;
+  }
+  .moon{
+      color: rgb(184, 170, 170);
   }
   
 
