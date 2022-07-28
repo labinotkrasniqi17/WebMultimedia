@@ -26,7 +26,7 @@ export const ContactForm = () => {
       axios
         .post("http://localhost:5000/api/contact/send", contact)
         .then(alert("Message was sent successfuly!"));
-        window.location.reload();
+      window.location.reload();
     }
   };
 
@@ -113,17 +113,17 @@ export const ContactForm = () => {
               <ul>
                 <li>
                   <a href="#">
-                    <i className="fa fa-facebook"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="fa fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="fa fa-youtube-play"></i>
+                    <i className="fa-brands fa-youtube"></i>{" "}
                   </a>
                 </li>
               </ul>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const About = () => {
   return (
-    <section id="ABOUT">
+    <section style={{ marginBottom:"30px" }} id="ABOUT">
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-md-offset-1">

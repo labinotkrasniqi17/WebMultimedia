@@ -34,12 +34,12 @@ export const Header = () => {
     if (vid.muted) {
       vid.muted = false;
       mutebtn.innerHTML = `
-      <i style= "color:gray;font-size:40px" class="fas fa-volume-up" ></i>
+      <i style= "color:gray;font-size:35px" class="fas fa-volume-up" ></i>
       `;
     } else {
       vid.muted = true;
       mutebtn.innerHTML = `         
-      <i style="color:gray;font-size:40px" class="fa-solid fa-volume-xmark"></i>
+      <i style="color:gray;font-size:35px" class="fa-solid fa-volume-xmark"></i>
       `;
     }
   }
@@ -47,7 +47,7 @@ export const Header = () => {
     <div>
       <header className="header" id="HOME">
       <button style={{ position:"absolute", margin:70, zIndex:"1" }} onClick={vidmute} id="mutebtn">
-          <i style={{ color: "gray",fontSize:"40px" }} class="fa-solid fa-volume-xmark"></i>
+          <i style={{ color: "gray",fontSize:"35px" }} class="fa-solid fa-volume-xmark"></i>
         </button>
         <video
           id="my_video"
@@ -63,7 +63,7 @@ export const Header = () => {
             left: 0,
             zIndex: -1,
             height: "100vh",
-            width: "100vw",
+            width: "100%",
             objectFit: "cover",
             overflowX: "hidden",
             marginTop: 50,
