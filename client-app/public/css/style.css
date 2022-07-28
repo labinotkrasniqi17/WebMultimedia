@@ -689,8 +689,8 @@ p {
 .wrapper{
     margin: 0 auto;
     position: relative;
-    height: 500px;
-    width: 750px;
+    height: 600px;
+    width: 620px;
     overflow: hidden;
     background: #fff;
     border: 7px solid #fff;
@@ -704,14 +704,14 @@ p {
   .wrapper .images .img-1{
     height: 100%;
     width: 100%;
-    background: url("../images/normal.jpeg") no-repeat;
+    background: url("../images/normal.jpg") no-repeat;
     
   }
   .wrapper .images .img-2{
     position: absolute;
     height: 100%;
     width: 50%;
-    background: url("../images/modified.jpeg") no-repeat;
+    background: url("../images/modified.jpg") no-repeat;
   }
   .wrapper .slider{
     position: absolute;

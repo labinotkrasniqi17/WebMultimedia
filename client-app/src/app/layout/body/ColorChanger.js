@@ -14,6 +14,7 @@ export const ColorChanger = () => {
     
   return (
     <div className="wrapper">
+      <h4 style={{ position:"absolute", zIndex:1, marginLeft:"224px", fontFamily:"cursive"}}>BEFORE - AFTER</h4>
       <div className="images">
         <div className="img-1"></div>
         <div className="img-2"></div>
