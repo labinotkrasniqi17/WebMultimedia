@@ -46,35 +46,331 @@ export const Header = () => {
   return (
     <div>
       <header className="header" id="HOME">
-      <button style={{ position:"absolute", margin:70, zIndex:"1" }} onClick={vidmute} id="mutebtn">
-          <i style={{ color: "gray",fontSize:"35px" }} class="fa-solid fa-volume-xmark"></i>
-        </button>
-        <video
-          id="my_video"
-          muted
-          autoPlay
-          loop
-          plays-playsInline
-          className="back-video"
+        {/* <h4
           style={{
-            postion: "relative",
-            right: 0,
-            bottom: 0,
-            left: 0,
-            zIndex: -1,
-            height: "100vh",
-            width: "100%",
-            objectFit: "cover",
-            overflowX: "hidden",
-            marginTop: 50,
+            margin: "50px 0 0 30px",
+            width: "70%",
+            color: "white",
+            textAlign: "left",
+            paddingTop: "20px",
           }}
         >
-          <source src="./videos/videoplayback.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </h4>
+        <p
+          style={{
+            margin: "10px 0 0 30px",
+            color: "white",
+            width: "70%",
+            textAlign: "left",
+          }}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          commodi accusantium numquam tempore non nobis consequuntur eius
+          consequatur et placeat architecto, libero laboriosam delectus id
+          aliquid dolore maxime tempora dicta similique, aut nemo quia alias.
+          Quod dignissimos ipsa, labore, ducimus ipsum, quasi fuga adipisci
+          vitae ratione dicta eveniet cum fugit.
+        </p>{" "} */}
 
-       
+        <h2
+          className="special-title text-center text-sm-left h2 fadeInUp wow"
+          style={{
+            margin: "50px 0 0 30px",
+            width: "70%",
+            color: "white",
+            textAlign: "left",
+            paddingTop: "40px",
+            color: "#FFF8F6",
+            fontWeight: "bolder",
+            animationName: "fadeInUp",
+          }}
+        >
+          Service – fast change in up to 30 minutes
+        </h2>
 
+        <p
+          className="special-title text-center text-sm-left h2 fadeInUp wow"
+          style={{
+            width: "60px",
+            margin: "10px 0 20px 30px",
+            borderBottom: "3px solid #ea3a3c",
+          }}
+        ></p>
+
+        <p
+          className="special-title text-center text-sm-left h2 fadeInUp wow"
+          style={{
+            margin: "10px 0 0 30px",
+            color: "white",
+            width: "70%",
+            textAlign: "left",
+            color: "#FFF8F6",
+            fontFamily: "sans-serif",
+            fontSize: "15px",
+            lineHeight: "2rem",
+          }}
+        >
+          Professional servicing of all types of mobile phones with cutting-edge
+          equipment.
+        </p>
+
+        <p
+          style={{
+            marginLeft: "30px",
+            color: "white",
+            width: "70%",
+            textAlign: "left",
+            color: "#FFF8F6",
+            fontFamily: "sans-serif",
+            fontSize: "15px",
+          }}
+        >
+          Fast service of certain models on the spot at the lowest price.
+        </p>
+        <br />
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          {/* <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexWrap: "wrap",
+              margin: "0 0 60px 30px",
+            }}
+          >
+            <div
+              style={{
+                color: "white",
+                width: "47%",
+                height: "47%",
+                margin: "2px",
+                border: "1px solid black",
+              }}
+            >
+              <img
+                width="100%"
+                height="100%"
+                src="images/repair2.jpg"
+                alt="logo"
+              />
+            </div>
+            <div
+              style={{
+                color: "white",
+                width: "47%",
+                height: "47%",
+                margin: "2px",
+                border: "1px solid black",
+              }}
+            >
+              <img
+                width="100%"
+                height="100%"
+                src="images/repair3.jpg"
+                alt="logo"
+              />
+            </div>
+            <div
+              style={{
+                color: "white",
+                width: "47%",
+                height: "47%",
+                margin: "2px",
+                border: "1px solid black",
+              }}
+            >
+              <img
+                width="100%"
+                height="100%"
+                src="images/repair4.jpg"
+                alt="logo"
+              />
+            </div>
+            <div
+              style={{
+                color: "white",
+                width: "47%",
+                height: "47%",
+                margin: "2px",
+                border: "1px solid black",
+              }}
+            >
+              <img
+                width="100%"
+                height="100%"
+                src="images/phone-repair1.jpg"
+                alt="logo"
+              />
+            </div>
+          </div> */}
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexWrap: "wrap",
+              margin: "0 0 60px 30px",
+            }}
+          >
+            <div
+              className="hover"
+              style={{
+                color: "white",
+                width: "47%",
+                height: "50%",
+                margin: "4px",
+                background: "url('images/ostetenekran-bg.svg')",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#fff",
+                padding: "17px",
+                color: "black",
+                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
+              }}
+            >
+              <div>
+                <img
+                  width="35%"
+                  height="60%"
+                  src="images/ostetenekran.svg"
+                  alt="servis ekran"
+                />
+
+                {/* <img src="images/ostetenekran-bg.svg" alt="servis ekran" /> */}
+              </div>
+
+              <h3 className="special-title mb-0 special-title-center h4 text-center">
+                Screen
+              </h3>
+            </div>
+
+            <div
+              className="hover"
+              style={{
+                color: "white",
+                width: "47%",
+                height: "50%",
+                margin: "4px",
+                background: "url('images/ostanato-2-bg.svg')",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#fff",
+                padding: "17px",
+                color: "black",
+                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
+              }}
+            >
+              <div>
+                <img
+                  width="35%"
+                  height="60%"
+                  src="images/kamera.svg"
+                  alt="servis kamera"
+                />
+
+                {/* <img src="images/ostanato-2-bg.svg" alt="servis kamera" /> */}
+              </div>
+
+              <h3 className="special-title mb-0 special-title-center h4 text-center">
+                Camera
+              </h3>
+            </div>
+
+            <div
+              className="hover"
+              style={{
+                color: "white",
+                width: "47%",
+                height: "50%",
+                margin: "4px",
+                background: "url('images/baterija-bg.svg')",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#fff",
+                padding: "17px",
+                color: "black",
+                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
+              }}
+            >
+              <div>
+                <img
+                  width="35%"
+                  height="60%"
+                  src="images/baterija.svg"
+                  alt="servis baterija"
+                />
+
+                {/* <img src="images/baterija-bg.svg" alt="servis baterija" /> */}
+              </div>
+
+              <h3 className="special-title mb-0 special-title-center h4 text-center">
+                Battery
+              </h3>
+            </div>
+
+            <div
+              className="hover"
+              style={{
+                color: "white",
+                width: "47%",
+                height: "50%",
+                margin: "4px",
+                background: "url('images/audio-bg.svg')",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#fff",
+                padding: "17px",
+                color: "black",
+                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
+              }}
+            >
+              <div>
+                <img
+                  width="35%"
+                  height="60%"
+                  src="images/zvuk.svg"
+                  alt="servis zvucnik"
+                />
+
+                {/* <img src="ima ges/audio-bg.svg" alt="servis zvucnik" /> */}
+              </div>
+
+              <h3 className="special-title mb-0 special-title-center h4 text-center">
+                Speaker
+              </h3>
+            </div>
+          </div>
+          <div style={{ height: "100%", width: "100%" }}>
+            <button
+              style={{ position: "absolute", margin: 70, zIndex: "1" }}
+              onClick={vidmute}
+              id="mutebtn"
+            >
+              <i
+                style={{ color: "gray", fontSize: "35px" }}
+                class="fa-solid fa-volume-xmark"
+              ></i>
+            </button>
+            <video
+              id="my_video"
+              muted
+              autoPlay
+              loop
+              plays-playsInline
+              className="back-video"
+              style={{
+                postion: "relative",
+                right: 0,
+                bottom: 0,
+                left: 0,
+                zIndex: -1,
+                height: "400px",
+                width: "90%",
+                objectFit: "cover",
+                overflowX: "hidden",
+                margin: "40px 20px 18px 20px",
+              }}
+            >
+              <source src="./videos/videoplayback.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
         {/* <button onClick={ClickON}>ONN</button> */}
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
@@ -165,7 +461,6 @@ export const Header = () => {
             </div>
           </div>
         </nav>
-
         <div className="header-overlay">
           <div className="container header-container">
             <div className="row" style={{ marginTop: "100px" }}>
