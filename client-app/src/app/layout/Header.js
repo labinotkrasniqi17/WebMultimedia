@@ -73,11 +73,11 @@ export const Header = () => {
           vitae ratione dicta eveniet cum fugit.
         </p>{" "} */}
 
-        <h2
+        <h1
           className="special-title text-center text-sm-left h2 fadeInUp wow"
           style={{
             margin: "50px 0 0 30px",
-            width: "70%",
+            width: "100%",
             color: "white",
             textAlign: "left",
             paddingTop: "40px",
@@ -86,8 +86,8 @@ export const Header = () => {
             animationName: "fadeInUp",
           }}
         >
-          Service – fast change in up to 30 minutes
-        </h2>
+          Service - fast changeover up to 30 minutes in most cases
+        </h1>
 
         <p
           className="special-title text-center text-sm-left h2 fadeInUp wow"
@@ -107,7 +107,7 @@ export const Header = () => {
             textAlign: "left",
             color: "#FFF8F6",
             fontFamily: "sans-serif",
-            fontSize: "15px",
+            fontSize: "17px",
             lineHeight: "2rem",
           }}
         >
@@ -123,7 +123,7 @@ export const Header = () => {
             textAlign: "left",
             color: "#FFF8F6",
             fontFamily: "sans-serif",
-            fontSize: "15px",
+            fontSize: "17px",
           }}
         >
           Fast service of certain models on the spot at the lowest price.
