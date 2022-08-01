@@ -76,7 +76,7 @@ export const Header = () => {
         <h1
           className="special-title text-center text-sm-left h2 fadeInUp wow"
           style={{
-            margin: "50px 0 0 30px",
+            margin: "50px 0 0 70px",
             width: "100%",
             color: "white",
             textAlign: "left",
@@ -93,7 +93,7 @@ export const Header = () => {
           className="special-title text-center text-sm-left h2 fadeInUp wow"
           style={{
             width: "60px",
-            margin: "10px 0 20px 30px",
+            margin: "10px 0 20px 70px",
             borderBottom: "3px solid #ea3a3c",
           }}
         ></p>
@@ -101,7 +101,7 @@ export const Header = () => {
         <p
           className="special-title text-center text-sm-left h2 fadeInUp wow"
           style={{
-            margin: "10px 0 0 30px",
+            margin: "10px 0 0 70px",
             color: "white",
             width: "70%",
             textAlign: "left",
@@ -117,7 +117,7 @@ export const Header = () => {
 
         <p
           style={{
-            marginLeft: "30px",
+            marginLeft: "70px",
             color: "white",
             width: "70%",
             textAlign: "left",
@@ -208,7 +208,7 @@ export const Header = () => {
               display: "flex",
               width: "100%",
               flexWrap: "wrap",
-              margin: "0 0 60px 30px",
+              margin: "0 0 60px 70px",
             }}
           >
             <div
