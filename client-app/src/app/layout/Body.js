@@ -5,6 +5,7 @@ import { ColorChanger } from './body/ColorChanger';
 import { Testimonials } from './body/Testimonials';
 import { Features } from './body/Features';
 import { Purchase } from './body/Purchase';
+import { Download } from './body/Download';
 export const Body = () => {
   return (
     <>
@@ -12,6 +13,7 @@ export const Body = () => {
       <ColorChanger />
       <Features />
       <Purchase />
+      <Download />
       <Testimonials />
       <ContactForm />
     </>
