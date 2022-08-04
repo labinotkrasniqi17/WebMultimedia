@@ -6,6 +6,7 @@ import { Testimonials } from './body/Testimonials';
 import { Features } from './body/Features';
 import { Purchase } from './body/Purchase';
 import { Download } from './body/Download';
+import { Available } from './body/Available';
 export const Body = () => {
   return (
     <>
@@ -15,6 +16,7 @@ export const Body = () => {
       <Purchase />
       <Download />
       <Testimonials />
+      <Available />
       <ContactForm />
     </>
   );

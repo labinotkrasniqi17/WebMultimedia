@@ -5,6 +5,7 @@ import { Testimonials } from './Testimonials';
 import { Features } from './Features';
 import { Purchase } from './Purchase';
 import { Download } from './Download';
+import { Available } from './Available';
 export {
   About,
   ContactForm,
@@ -13,4 +14,5 @@ export {
   Features,
   Purchase,
   Download,
+  Available,
 };
