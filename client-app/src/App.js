@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Route, Routes } from "react-router";
 import "./App.css";
 import { Dashboard } from "./app/Dashboard";
+import { Error } from "./app/Error";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -9,14 +11,15 @@ function App() {
     setTimeout(() => {
       spinner.style.display = "none";
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }
   return (
     !loading && (
-    <div className="App">
-      <Dashboard />
-      
-    </div>)
+        <Routes>
+          <Route path="/" element={<Dashboard />}></Route>
+          <Route path="*" element={<Error />}></Route>
+        </Routes>
+    )
   );
 }
 

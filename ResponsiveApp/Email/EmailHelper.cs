@@ -38,12 +38,12 @@ namespace Identity.Email
         public bool SendEmailPasswordReset(string email, string name, string subject, string message)
         {
             MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("astritmuciqi@gmail.com");
-            mailMessage.To.Add(new MailAddress(email));
-
+            mailMessage.From = new MailAddress(email);
+            mailMessage.To.Add(new MailAddress("am49608@ubt-uni.net"));
             mailMessage.Subject = subject;
             mailMessage.IsBodyHtml = true;
             mailMessage.Body =  " Name : <b>" + name+"</b> <br/>"+
+                                "Email : <b>"+ email+"</b> <br/>"+
                                 "<p>Message : " + message+"</p>";
 
             SmtpClient client = new SmtpClient();

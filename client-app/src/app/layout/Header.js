@@ -45,10 +45,8 @@ export const Header = () => {
   return (
     <div>
       <header className="header" id="HOME">
-  
-        {
-        
-        /* <h4
+      <div style={{ borderBottom:"5px solid gray" }} className="header-overlay">
+        {/* <h4
           style={{
             margin: "50px 0 0 30px",
             width: "70%",
@@ -80,7 +78,6 @@ export const Header = () => {
           style={{
             margin: "50px 0 0 70px",
             width: "100%",
-            color: "white",
             textAlign: "left",
             paddingTop: "40px",
             color: "#FFF8F6",
@@ -104,7 +101,6 @@ export const Header = () => {
           className="special-title text-center text-sm-left h2 fadeInUp wow"
           style={{
             margin: "10px 0 0 70px",
-            color: "white",
             width: "70%",
             textAlign: "left",
             color: "#FFF8F6",
@@ -120,7 +116,6 @@ export const Header = () => {
         <p
           style={{
             marginLeft: "70px",
-            color: "white",
             width: "70%",
             textAlign: "left",
             color: "#FFF8F6",
@@ -210,16 +205,15 @@ export const Header = () => {
               display: "flex",
               width: "100%",
               flexWrap: "wrap",
-              margin: "0 0 60px 70px",
+              margin: "0 0 60px 60px",
             }}
           >
             <div
               className="hover"
               style={{
-                color: "white",
-                width: "47%",
-                height: "50%",
-                margin: "4px",
+                width: "44%",
+                height: "47%",
+                margin: "15px",
                 background: "url('images/ostetenekran-bg.svg')",
                 backgroundRepeat: "no-repeat",
                 backgroundColor: "#fff",
@@ -247,10 +241,9 @@ export const Header = () => {
             <div
               className="hover"
               style={{
-                color: "white",
-                width: "47%",
-                height: "50%",
-                margin: "4px",
+                width: "44%",
+                height: "47%",
+                margin: "15px",
                 background: "url('images/ostanato-2-bg.svg')",
                 backgroundRepeat: "no-repeat",
                 backgroundColor: "#fff",
@@ -278,10 +271,9 @@ export const Header = () => {
             <div
               className="hover"
               style={{
-                color: "white",
-                width: "47%",
-                height: "50%",
-                margin: "4px",
+                width: "44%",
+                height: "47%",
+                margin: "15px",
                 background: "url('images/baterija-bg.svg')",
                 backgroundRepeat: "no-repeat",
                 backgroundColor: "#fff",
@@ -309,10 +301,9 @@ export const Header = () => {
             <div
               className="hover"
               style={{
-                color: "white",
-                width: "47%",
-                height: "50%",
-                margin: "4px",
+                width: "44%",
+                height: "47%",
+                margin: "15px",
                 background: "url('images/audio-bg.svg')",
                 backgroundRepeat: "no-repeat",
                 backgroundColor: "#fff",
@@ -339,12 +330,12 @@ export const Header = () => {
           </div>
           <div style={{ height: "100%", width: "100%" }}>
             <button
-              style={{ position: "absolute", margin: 70, zIndex: "1" }}
+              style={{ position: "absolute", marginTop:"90px", zIndex: "1" }}
               onClick={vidmute}
               id="mutebtn"
             >
               <i
-                style={{ color: "gray", fontSize: "35px" }}
+                style={{ color: "gray", fontSize: "35px", marginLeft:"30px" }}
                 class="fa-solid fa-volume-xmark"
               ></i>
             </button>
@@ -365,7 +356,9 @@ export const Header = () => {
                 width: "90%",
                 objectFit: "cover",
                 overflowX: "hidden",
-                margin: "40px 20px 18px 20px",
+                margin: "60px 20px 20px 20px",
+                borderTop:"20px solid black",
+                borderBottom:"20px solid black",
               }}
             >
               <source src="./videos/videoplayback.mp4" type="video/mp4" />
@@ -374,6 +367,7 @@ export const Header = () => {
           </div>
         </div>
         {/* <button onClick={ClickON}>ONN</button> */}
+        </div>
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">

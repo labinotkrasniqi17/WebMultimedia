@@ -3,63 +3,62 @@
 
 /* Show and hide menu */
 
-$(document).ready(function(){
+// $(document).ready(function(){
    
-    'use strict';
+//     'use strict';
     
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
         
-        'use strict';
+//         'use strict';
         
-        if($(window).scrollTop() > 80 ) {
+//         if($(window).scrollTop() > 80 ) {
             
-            $('.navbar').css ({
-                'margin-top': '0px',
-                 'opacity': '1'
+//             $('.navbar').css ({
+//                 'margin-top': '0px',
+//                  'opacity': '1'
                  
-             });
+//              });
              
-             $('.navbar-default').css({
-                 'background-color': 'rgba(59, 59 , 59, 0.7)',
-                 'border-color': '#444'
+//              $('.navbar-default').css({
+//                  'background-color': 'rgba(59, 59 , 59, 0.7)',
+//                  'border-color': '#444'
                  
-             });
+//              });
              
-             $('.navbar-brand img').css({
-                'height': '35px',
-                 'padding-top': '0px'
+//              $('.navbar-brand img').css({
+//                 'height': '35px',
+//                  'padding-top': '0px'
                  
-             });
+//              });
              
-             $('.navbar-nav > li > a ').css({
-                 'padding-top': '15px'
+//              $('.navbar-nav > li > a ').css({
+//                  'padding-top': '15px'
                  
                  
-             });
+//              });
              
             
-        } else {
+//         } else {
 
-            $('.navbar').css ({
-                'margin-top': '0px',
-                 'opacity': '1'
+//             $('.navbar').css ({
+//                 'margin-top': '0px',
+//                  'opacity': '1'
                  
-             });
+//              });
              
-             $('.navbar-default').css({
-                 'background-color': 'rgba(59, 59 , 59, 0)'
-                 
-             });
+//              $('.navbar-default').css({
+//                  'background-color': 'rgba(59, 59 , 59, 0)'
+//              });
             
             
             
-        }
+//         }
        
         
-    });
+//     });
     
     
-});
+// });
 
 //add smooth scrolling
 $(document).ready(function() {
