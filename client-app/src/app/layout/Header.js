@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 export const Header = () => {
   const [darkMode, setDarkMode] = useState();
 
@@ -16,7 +15,7 @@ export const Header = () => {
     darkMode.addEventListener("click", () => {
       document.body.classList.toggle("dark__mode");
       lightMode.classList.remove("hide");
-      darkMode.classList.toggle("hide");
+      darkMode.classList.toggle("hide"); 
     });
   }, [darkMode]);
 
@@ -46,7 +45,10 @@ export const Header = () => {
   return (
     <div>
       <header className="header" id="HOME">
-        {/* <h4
+  
+        {
+        
+        /* <h4
           style={{
             margin: "50px 0 0 30px",
             width: "70%",
@@ -426,6 +428,12 @@ export const Header = () => {
                   <a href="#CONTACT" className="nav-item">
                     CONTACT
                   </a>
+                </li>
+                <li>
+                  <a href="" className="nav-item">
+                    GAME
+                  </a>
+                  
                 </li>
                 <button
                   onClick={() =>
