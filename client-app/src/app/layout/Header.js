@@ -45,7 +45,7 @@ export const Header = () => {
   return (
     <div>
       <header className="header" id="HOME">
-      <div style={{ borderBottom:"5px solid gray" }} className="header-overlay">
+      <div style={{backgroundColor:'#fff' , borderBottom:"5px solid gray" }} className="header-overlay">
         {/* <h4
           style={{
             margin: "50px 0 0 30px",
@@ -80,7 +80,7 @@ export const Header = () => {
             width: "100%",
             textAlign: "left",
             paddingTop: "40px",
-            color: "#FFF8F6",
+            color: "black",
             fontWeight: "bolder",
             animationName: "fadeInUp",
           }}
@@ -103,7 +103,7 @@ export const Header = () => {
             margin: "10px 0 0 70px",
             width: "70%",
             textAlign: "left",
-            color: "#FFF8F6",
+            color: "black",
             fontFamily: "sans-serif",
             fontSize: "17px",
             lineHeight: "2rem",
@@ -118,7 +118,7 @@ export const Header = () => {
             marginLeft: "70px",
             width: "70%",
             textAlign: "left",
-            color: "#FFF8F6",
+            color: "black",
             fontFamily: "sans-serif",
             fontSize: "17px",
           }}
