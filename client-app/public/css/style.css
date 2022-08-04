@@ -217,6 +217,7 @@ p {
     margin-top: 40px;
     font-size: 19px;
     line-height: 24px;
+    font-family: Georgia, serif;
 }
 
 .choose-us-item {
@@ -247,6 +248,7 @@ p {
 .choose-us-item p {
     color: #727272;
     font-size: 15px;
+    font-family: Georgia, serif;
 } 
 /* ========= Testimonials ============= */
 .testimonial {

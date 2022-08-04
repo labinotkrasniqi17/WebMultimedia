@@ -468,26 +468,26 @@ export const Header = () => {
             <div className="row" style={{ marginTop: "100px" }}>
               <div className="col-md-8">
                 <div className="header-text">
-                  <h1> A clean and modern looking reponsive website</h1>
-                  <p> Built with great love!</p>
+                  <h1>Play Game to relax, till someone returns you an answer on email!</h1>
+                  <p>Tap on phone screen, or at button to play game!</p>
                 </div>
 
                 <div className="header-btns">
                   <a className="btn btn-download wow fadeInLeft" href="/">
-                    Download
+                    Play Game
                   </a>
-                  <a className="btn btn-tour wow fadeInRight" href="/">
+                  {/* <a className="btn btn-tour wow fadeInRight" href="/">
                     {" "}
                     Take A Tour
                     <i className="fa fa-angle-down"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div></div>
 
               <div className="col-md-3 col-md-offset-1">
                 <div className="header-iphone">
-                  <img src="images/iphone-header.png" alt="header iphone" />
+                  <img src="images/iphone.png" alt="header iphone" />
                 </div>
               </div>
             </div>
