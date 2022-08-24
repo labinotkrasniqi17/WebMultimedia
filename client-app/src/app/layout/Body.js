@@ -11,11 +11,11 @@ export const Body = () => {
   return (
     <>
       <About />
-      <ColorChanger />
+      <Testimonials />
       <Features />
       <Purchase />
+      <ColorChanger />
       <Download />
-      <Testimonials />
       <Available />
       <ContactForm />
     </>

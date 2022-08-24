@@ -33,19 +33,19 @@ export const Header = () => {
     if (vid.muted) {
       vid.muted = false;
       mutebtn.innerHTML = `
-      <i style= "color:gray;font-size:35px" class="fas fa-volume-up" ></i>
+      <i style= "color:gray;font-size:35px;margin-left:-50px;" class="fas fa-volume-up" ></i>
       `;
     } else {
       vid.muted = true;
       mutebtn.innerHTML = `         
-      <i style="color:gray;font-size:35px" class="fa-solid fa-volume-xmark"></i>
+      <i style="color:gray;font-size:35px;margin-left:-50px;" class="fa-solid fa-volume-xmark"></i>
       `;
     }
   }
   return (
     <div>
       <header className="header" id="HOME">
-      <div style={{backgroundColor:'#fff' , borderBottom:"5px solid gray" }} className="header-overlay">
+      <div style={{backgroundColor:'#fff ' }} className="header-overlay">
         {/* <h4
           style={{
             margin: "50px 0 0 30px",
@@ -219,7 +219,6 @@ export const Header = () => {
                 backgroundColor: "#fff",
                 padding: "17px",
                 color: "black",
-                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
               }}
             >
               <div>
@@ -249,7 +248,6 @@ export const Header = () => {
                 backgroundColor: "#fff",
                 padding: "17px",
                 color: "black",
-                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
               }}
             >
               <div>
@@ -279,7 +277,6 @@ export const Header = () => {
                 backgroundColor: "#fff",
                 padding: "17px",
                 color: "black",
-                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
               }}
             >
               <div>
@@ -309,7 +306,6 @@ export const Header = () => {
                 backgroundColor: "#fff",
                 padding: "17px",
                 color: "black",
-                boxShadow: "rgba(236, 234, 235, 0.8) 0px 0px 0px 3px",
               }}
             >
               <div>
@@ -330,12 +326,12 @@ export const Header = () => {
           </div>
           <div style={{ height: "100%", width: "100%" }}>
             <button
-              style={{ position: "absolute", marginTop:"90px", zIndex: "1" }}
+              style={{ position: "absolute", marginTop:"100px", zIndex: "1" }}
               onClick={vidmute}
               id="mutebtn"
             >
               <i
-                style={{ color: "gray", fontSize: "35px", marginLeft:"30px" }}
+                style={{ color: "gray", fontSize: "35px", marginLeft:"-50px" }}
                 class="fa-solid fa-volume-xmark"
               ></i>
             </button>
@@ -343,7 +339,6 @@ export const Header = () => {
               id="my_video"
               muted
               autoPlay
-              loop
               plays-playsInline
               className="back-video"
               style={{
@@ -352,13 +347,11 @@ export const Header = () => {
                 bottom: 0,
                 left: 0,
                 zIndex: -1,
-                height: "400px",
-                width: "90%",
+                height: "300px",
+                width: "100%",
                 objectFit: "cover",
                 overflowX: "hidden",
-                margin: "60px 20px 20px 20px",
-                borderTop:"20px solid black",
-                borderBottom:"20px solid black",
+                margin: "80px 0 20px -50px",
               }}
             >
               <source src="./videos/videoplayback.mp4" type="video/mp4" />
@@ -384,7 +377,7 @@ export const Header = () => {
                 <span className="icon-bar"></span>
               </button>
               <a className="navbar-brand" href="/">
-                <img src="images/logo-small.png" alt="logo" />
+                <img style={{ height:"30px", marginLeft:"8px" }} src="images/fix.svg" alt="logo" />
               </a>
             </div>
 

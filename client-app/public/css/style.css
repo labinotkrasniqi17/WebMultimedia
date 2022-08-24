@@ -689,7 +689,7 @@ p {
 
 /* colorchanger */
 .wrapper{
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     position: relative;
     height: 600px;
     width: 620px;

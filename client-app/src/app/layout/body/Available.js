@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Available = () => {
   return (
-    <section class="available-on">
-      <div class="container wow bounceInRight" data-wow-duration="1s">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="available-title">
+    <section className="available-on">
+      <div className="container wow bounceInRight" data-wow-duration="1s">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="available-title">
               <h2>Available On </h2>
 
               <p>
@@ -16,13 +16,13 @@ export const Available = () => {
               </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="row">
+          <div className="col-md-6">
+            <div className="row">
               <a href="#">
-                <div class="col-md-4 no-padding">
-                  <div class="available-on-item">
-                    <i class="fa fa-apple"></i>
-                    <div class="available-on-inner">
+                <div className="col-md-4 no-padding">
+                  <div className="available-on-item">
+                    <i className="fab fa-apple"></i>
+                    <div className="available-on-inner">
                       <h2> iOS</h2>
                     </div>
                   </div>
@@ -30,10 +30,10 @@ export const Available = () => {
               </a>
 
               <a href="#">
-                <div class="col-md-4 no-padding">
-                  <div class="available-on-item">
-                    <i class="fa fa-android"></i>
-                    <div class="available-on-inner">
+                <div className="col-md-4 no-padding">
+                  <div className="available-on-item">
+                    <i className="fab fa-android"></i>
+                    <div className="available-on-inner">
                       <h2> ANDROID</h2>
                     </div>
                   </div>
@@ -41,10 +41,10 @@ export const Available = () => {
               </a>
 
               <a href="#">
-                <div class="col-md-4 no-padding">
-                  <div class="available-on-item">
-                    <i class="fa fa-windows"></i>
-                    <div class="available-on-inner">
+                <div className="col-md-4 no-padding">
+                  <div className="available-on-item">
+                    <i className="fab fa-windows"></i>
+                    <div className="available-on-inner">
                       <h2> WINDOWS</h2>
                     </div>
                   </div>
