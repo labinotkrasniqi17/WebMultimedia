@@ -10,14 +10,39 @@
 </head>
 
 <body>
-<div id="ground">
+<h1>Score: <span id="score">0</span></h1>
+
+<div class="container" id="containerId">
+    <h1 id="animate2"><em>Welcome</em></h1>
+    <h1 id="animate" ><em>Obstacle Game</em></h1>
+    
+    
+<h1  id="music-txt"><em style="font-size: 20px;">Music</em></h1>
+<audio id="sound" controls autoplay loop src="./soundGame.mp3" style="height:50px;"></audio>
+<br>
+<h1 id="demo"><em style="font-size: 20px;">Select color</em></h1>
+<input type="color" id="myColor" value="#ff0080" style="width: 100px;" oninput="setColortoCharacter()">
+<br><br><br>
+
+<button id="play-button">Play Game</button>
+
 </div>
+
+<!-- <div class="middle">
+<h1>HELLOO</h1>
+</div> -->
+
+<!-- <div id="ground">
+</div> -->
+
 
 <div id="character">
 </div>
 
 <div class="obstacles">
 </div>
+
+
 
     <script src="./script.js"></script>
 </body>

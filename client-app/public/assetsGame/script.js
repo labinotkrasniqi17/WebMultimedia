@@ -13,20 +13,22 @@ let groundHeight = parseInt(window.getComputedStyle(character).getPropertyValue(
  let isJumping=false;
  let upTime;
  let downTime;
+ let displayScore=document.getElementById('score');
+ let score=0;
 
 function jump(){
 
     if(isJumping) return;
     upTime=setInterval(()=>{
-        if(characterBottom > groundHeight + 250){
+        if(characterBottom > groundHeight + 300){
             clearInterval(upTime);
           downTime=setInterval(()=>{
-            if(characterBottom <= groundHeight + 10){
+            if(characterBottom <= groundHeight + 60){
                 clearInterval(downTime);
                 isJumping = false;
 
             }
-            characterBottom -= 10;
+            characterBottom -= 10;          //check here
             character.style.bottom=characterBottom + 'px';
           },20);
 
@@ -38,32 +40,65 @@ function jump(){
 
 }
 
+// function showScore(){
+//   score++;
+//   displayScore.innerText=score;
+// }
+
+
+
 function generateObstacle(){
 let obstacles=document.querySelector('.obstacles');
 let obstacle=document.createElement('div');
 obstacle.setAttribute('class','obstacle');
 obstacles.appendChild(obstacle);
 
+let randomTimeout=Math.floor(Math.random() * 1000)+1000;
 let obstacleRight= -30;
 let obstacleBottom=100;
 let obstacleWidth=30;
-let obstaceHeight=Math.floor(Math.random() *50) +50;
+let obstacleHeight=Math.floor(Math.random() *50) +50;
+obstacle.style.backgroundColor=`rgb(${Math.floor(Math.random()*255)}, 
+${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},  )`;
+
+
 
 function moveObstacle(){
 obstacleRight +=5;
 obstacle.style.right=obstacleRight + 'px';
 obstacle.style.bottom=obstacleBottom + 'px';
 obstacle.style.width=obstacleWidth + 'px';
-obstacle.style.height=obstaceHeight + 'px';
+obstacle.style.height=obstacleHeight + 'px';
+ if(characterRight >=obstacleRight - characterWidth && characterRight <= 
+  obstacleRight + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
 
+console.log("UPPSSSS");
+alert('Game over! Your Score is: '+score);
+
+clearInterval(obstacleInterval);
+clearTimeout(obstacleTimeout);
+location.reload();
+
+
+
+ }
+
+
+var container=document.getElementById("containerId");
+container.style.display='none';
+ 
 }
 
 let obstacleInterval=setInterval(moveObstacle,20);
-let obstacleTimeout=setTimeout(generateObstacle, 1000);
+let obstacleTimeout=setTimeout(generateObstacle, randomTimeout);
+// setInterval(showScore,1000);      // score counter
+score++;
+displayScore.innerText=score;
 
 }
 
-generateObstacle();
+document.getElementById("play-button").addEventListener("click", generateObstacle);
+//  generateObstacle();  
 
 function control(e){
     if(e.key == 'ArrowUp' || e.key == ' '){
@@ -74,3 +109,10 @@ function control(e){
 }
 
 document.addEventListener('keydown', control);
+
+function setColortoCharacter() {
+  var x = document.getElementById("myColor").value;
+document.getElementById('character').style.background=x;
+
+}
+
