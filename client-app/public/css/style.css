@@ -954,8 +954,149 @@ p {
   }
 }
 
+/* GAME CSS */
+
+.game{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../assetsGame/photo1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 115% ;
+  }
+  #ground{
+  width: 100%;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  }
+  
+  #character{
+  width: 50px;
+  height: 50px;
+  background-color:whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 17%;
+  right: calc(100% - 100px);
+  box-shadow: 0px 0px 20px 3px #f2f5f0;
+  }
+  .obstacle{
+  width: 30px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  }
+  
+  h2{
+  font-family:sans-serif;
+  margin-top:10px;
+  margin-left:10px;
+  
+  }
+  
+  .audio{
+      width: 100px;
+      height: 20px;
+  }
+  .containeri{
+   /* border: 2px solid black; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: -70px auto;
+   width: 500px;
+   /* width: calc(100% - 75%); */
+   height: 500px;
+   /* height: calc(100% - 50%);; */
+   overflow: hidden; 
+  }
+  
+  
+  
+  #animate{
+      width: auto;
+      height: 50px;
+      position: relative;
+      animation-name: example;
+      animation-duration: 5s;
+      animation-direction: reverse;  
+    }
+    
+    @keyframes example {
+      0%   { left:0px; top:0px;}
+      25%  { left:500px; top:0px;}
+      100% { left:0px; top:0px;}
+    }
+  
+    #animate2{
+      width: auto;
+      height: 50px;
+      position: relative;
+      animation-name: example2;
+      animation-duration: 5s;
+      animation-direction: reverse;  
+    }
+    
+    @keyframes example2 {
+      0%   { right:0px; top:0px;}
+      25%  { right:500px; top:0px;}
+      100% { right:0px; top:0px;}
+    }
+    
 
 
+    /* Under Construction */
+    .bgimg {
+      /* Background image */
+      /* Full-screen */
+      /* Center the background image */
+      background-position: center;
+      /* Scale and zoom in the image */
+      background-size: cover;
+      /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+      position: relative;
+      /* Add a white text color to all elements inside the .bgimg container */
+      color: black;
+      /* Add a font */
+      font-family: "Courier New", Courier, monospace;
+      /* Set the font-size to 25 pixels */
+      font-size: 25px;
+    }
+    
+    /* Position text in the top-left corner */
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+    
+    /* Position text in the bottom-left corner */
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+    
+    /* Position text in the middle */
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    /* Style the <hr> element */
+    hr {
+      margin: auto;
+      width: 40%;
+    }
 
 
 
