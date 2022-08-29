@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 export const Header = () => {
   const [darkMode, setDarkMode] = useState();
 
@@ -466,9 +467,9 @@ export const Header = () => {
                 </div>
 
                 <div className="header-btns">
-                  <a className="btn btn-download wow fadeInLeft" href="/">
+                  <Link className="btn btn-download wow fadeInLeft" to="/game">
                     Play Game
-                  </a>
+                  </Link>
                   {/* <a className="btn btn-tour wow fadeInRight" href="/">
                     {" "}
                     Take A Tour
@@ -480,7 +481,9 @@ export const Header = () => {
 
               <div className="col-md-3 col-md-offset-1">
                 <div className="header-iphone">
-                  <img src="images/iphone.png" alt="header iphone" />
+                  <Link to="/game">
+                    <img src="images/iphone.png" alt="header iphone" />
+                  </Link>
                 </div>
               </div>
             </div>
