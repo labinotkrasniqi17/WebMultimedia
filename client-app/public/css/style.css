@@ -983,6 +983,42 @@ p {
   right: calc(100% - 100px);
   box-shadow: 0px 0px 20px 3px #f2f5f0;
   }
+  .characterBoom{
+    background-color:#f47c04da !important;
+    box-shadow: 50px 0px 200px 10px #f47c04da !important;
+    width: 40px !important;
+  height: 40px !important;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: charcterAnimate;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: initial;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+  }
+  
+  @keyframes charcterAnimate {
+    0% {
+      transform: scale(2.5);
+      background-color: red;
+      border-radius: 100%;
+      
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(.200);
+      background-color: blue;
+      
+    }
+  }
+
+
   .obstacle{
   width: 30px;
   height: 100px;

@@ -46,10 +46,15 @@ function jump(){
 
 
 function generateObstacle(){
+
 let obstacles=document.querySelector('.obstacles');
 let obstacle=document.createElement('div');
 obstacle.setAttribute('class','obstacle');
 obstacles.appendChild(obstacle);
+score++;
+displayScore.innerText=score;
+
+
 
 let randomTimeout=Math.floor(Math.random() * 1000)+1000;
 let obstacleRight= -30;
@@ -60,6 +65,13 @@ obstacle.style.backgroundColor=`rgb(${Math.floor(Math.random()*255)},
 ${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},  )`;
 
 
+function test(){
+  clearInterval(obstacleInterval);
+clearTimeout(obstacleTimeout);
+location.reload();
+alert('Game over! Your Score is: '+score);
+
+}
 
 function moveObstacle(){
 obstacleRight +=5;
@@ -67,20 +79,24 @@ obstacle.style.right=obstacleRight + 'px';
 obstacle.style.bottom=obstacleBottom + 'px';
 obstacle.style.width=obstacleWidth + 'px';
 obstacle.style.height=obstacleHeight + 'px';
- if(characterRight >=obstacleRight - characterWidth && characterRight <= 
+
+if(characterRight >=obstacleRight - characterWidth && characterRight <= 
   obstacleRight + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
-
+    character.classList.add('characterBoom');
+    
+    // location.reload()
 console.log("UPPSSSS");
-alert('Game over! Your Score is: '+score);
+// alert('Game over! Your Score is: '+score);
+// clearInterval(obstacleInterval);
+// clearTimeout(obstacleTimeout);
+// location.reload();
 
-clearInterval(obstacleInterval);
-clearTimeout(obstacleTimeout);
-location.reload();
-
-
-
+  setTimeout(test,1000); 
+  
  }
 
+
+ 
 
 var container=document.getElementById("containerId");
 container.style.display='none';
@@ -88,12 +104,11 @@ container.style.display='none';
 }
 
 let obstacleInterval=setInterval(moveObstacle,20);
-let obstacleTimeout=setTimeout(generateObstacle, randomTimeout);
+let obstacleTimeout=setTimeout(generateObstacle, randomTimeout);}
 // setInterval(showScore,1000);      // score counter
-score++;
-displayScore.innerText=score;
+// score++;
+// displayScore.innerText=score;
 
-}
 
 document.getElementById("play-button").addEventListener("click", generateObstacle);
 //  generateObstacle();  
